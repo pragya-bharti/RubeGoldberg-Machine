@@ -358,7 +358,7 @@ void insert(){
 	struct node *q=NULL,*p=first;
 	struct node *t=(struct node*)malloc(sizeof(struct node));
 	
-	fscanf(stdin,"%s %s %s %s",t->fname,t->lname,t->age,t->dob);
+	// fscanf(stdin,"%s %s %s %s",t->fname,t->lname,t->age,t->dob);
 	t->next=NULL;
 	
 	if(strcmp(t->age,first->age)<0){                          //comparision returns true if the data in node is smaller than data in first node
@@ -395,7 +395,7 @@ int main()
 	while(!feof(ptr)){                                                //loop runs until End Of File is reached
 		struct node *t= (struct node*)malloc(sizeof(struct node));     //creates node
 		
-    fscanf(ptr,"%s %s %s %s",t->fname,t->lname,t->age,t->dob);      //takes input from the file
+    // fscanf(ptr,"%s %s %s %s",t->fname,t->lname,t->age,t->dob);      //takes input from the file
 
 		t->next=NULL;
 
